@@ -4,7 +4,7 @@ echo "Inicio db.php"."<br>";
 	$servername = "localhost";
 	$username = "root";
 	$password = "rootroot";
-	$database = "musica";
+	$database = "sakila";
 
 	try {
 		$conexion = new PDO("mysql:host=$servername;dbname=$database", $username, $password); 	 	 	 	 	 	

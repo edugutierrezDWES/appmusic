@@ -1,8 +1,9 @@
 # MODO DE TRABAJO
-Muy buenas equipo, para la organización y que luego no haya ningún problemaa la hora de juntar lo que hace cada uno 
+Muy buenas equipo, para la organización y que luego no haya ningún problema la hora de juntar lo que hace cada uno 
 me gustaría establecer ciertos criterios. Si tenéis alguna sugerencia o queréis cambiar algo me lo podéis decir sin problema.
 
-1. Vamos a utilizar Trello para organizarnos, https://trello.com/b/DstAA5KZ/proyecto-php. Podréis entrar cuando os invite a todos mediante vustros emails.
+1. Vamos a utilizar Trello para organizarnos, https://trello.com/invite/b/DstAA5KZ/ced8e3768fef9aabb204caf5db97e4d5/proyecto-php. Podéis entrar mediante esta 
+invitación pero tenéis que estar registrado antes.
 Se trata de una página específica para proyectos. Ahí se puede ver en el tablero que he creado 4 secciones y cada sección tiene varios apartados, cuando se
 termine una tarea se va a mover esa tarea al estado correspondiente. 
 

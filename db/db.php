@@ -1,10 +1,9 @@
 <?php
-echo "Inicio db.php"."<br>";
 
 	$servername = "localhost";
-	$username = "root";
+	$username = "root1";
 	$password = "rootroot";
-	$database = "sakila";
+	$database = "musica";
 
 	try {
 		$conexion = new PDO("mysql:host=$servername;dbname=$database", $username, $password); 	 	 	 	 	 	
@@ -13,5 +12,4 @@ echo "Inicio db.php"."<br>";
 		echo $ex->getMessage(); 	 	 	 	 	 	
 	}
 	
-echo "finaliza db.php"."<br>";
 ?>

@@ -1,13 +1,5 @@
+ <!--Código por: Rodrigo Cano--> 
 <?php
-	/*
-	downmusic.php funcionalidad:
-	▪ El cliente podrá seleccionar para su descarga todas las canciones que estime
-	oportunas.
-	▪ Se creará un botón Finalizar Compra que finalizará la compra de las canciones y
-	generará la factura correspondiente.
-	▪ Se implementará una pasarela de pagos con tarjeta. Se almacenará en la tabla
-	Invoice la información de la fecha, hora, el número de tarjeta y el código de respuesta.
-	*/
 	if (!isset($_SESSION['cesta'])) {//Crea la sesion cesta en caso de no existir
 		$cesta= [];
 		$_SESSION['cesta'] = $cesta;//Se guarda un array vacio

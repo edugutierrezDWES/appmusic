@@ -1,0 +1,42 @@
+<?php
+	/*
+	downmusic.php funcionalidad:
+	▪ El cliente podrá seleccionar para su descarga todas las canciones que estime
+	oportunas.
+	▪ Se creará un botón Finalizar Compra que finalizará la compra de las canciones y
+	generará la factura correspondiente.
+	▪ Se implementará una pasarela de pagos con tarjeta. Se almacenará en la tabla
+	Invoice la información de la fecha, hora, el número de tarjeta y el código de respuesta.
+	*/
+	if (!isset($_SESSION['cesta'])) {//Crea la sesion cesta en caso de no existir
+		$cesta= [];
+		$_SESSION['cesta'] = $cesta;//Se guarda un array vacio
+	}
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {//Se añade un producto a la cesta
+		if (isset($_POST['cesta'])) {
+			$cancion = limpiar_campo($_POST["cancion"]);
+			
+			$cesta=$_SESSION['cesta'];
+
+			$cesta[$cancion]=0;
+			
+			$_SESSION['cesta']=$cesta;
+			}
+	}
+	if (isset($_SESSION['cesta']) && count($_SESSION['cesta'])>0 )
+		MostrarCesta($_SESSION['cesta']);
+
+?>
+<h2> Musica <h2>
+	<form name='alta_ped' action='downmusic.php' method='post'>
+	<select name='cancion'>
+		
+		 <?php
+		    // Solo muestra datos no accede a los mismos
+            foreach ($canciones as $cancion) {
+                echo "<option>" . $cancion["Name"]. "</option>";
+            }
+        ?>
+	</select><br>
+	<input type='submit' value='Añadir Cesta' name='cesta'>
+	<input type='submit' value='Finalizar Compra' name='finalizar'>

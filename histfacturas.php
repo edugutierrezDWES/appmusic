@@ -3,7 +3,7 @@
 require_once("db/db.php");
 
 // Llamada al controlador
-require_once("controllers/facturas_controller.php");
+require_once("controllers/histfacturas_controller.php");
 echo 'Fin index <br><a href="index.html">Volver</a><br>';
 
 

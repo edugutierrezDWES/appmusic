@@ -2,7 +2,7 @@
 
 <?php
 	include_once("models/downmusic_model.php");
-	include 'api/apiRedsys7_0.php';
+	include_once("api/apiRedsys5_2.php");
 
 	$canciones=consultaLista("SELECT * FROM Track");
 	if (!isset($_SESSION['cesta'])) {//Crea la sesion cesta en caso de no existir

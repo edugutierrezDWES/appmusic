@@ -1,0 +1,23 @@
+DATOS GENE´RICOS DE PRUEBA
+Número de comercio (Ds_Merchant_MerchantCode): 999008881
+Terminal (Ds_Merchant_Terminal): 01
+Clave secreta: sq7HjrUOBfKmC576ILgskD5srU870gJ7
+Tarjeta aceptada:
+
+    Numeracio´n: 4548 8120 4940 0004
+    Caducidad: 12/20
+    Co´digo CVV2: 123
+    En modo de compra segura (CES), en la que se requiera autenticacio´n del comprador, el co´digo de identificacio´n personal (CIP) es: 123456 
+
+Tarjeta rechazada:
+
+    Numeracio´n: 5576 4400 2278 8500
+    Caducidad: 12/20
+    Co´digo CVV2: 123
+    En modo de compra segura (CES), en la que se requiera autenticacio´n del comprador, el co´digo de identificacio´n personal (CIP) es: 123456 
+
+ALGUNOS USUARIOS DE PRUEBA
+
+daan_peeters@apple.be:Peeters
+kara.nielsen@jubii.dk:Nielsen
+eduardo@woodstock.com.br:Martins

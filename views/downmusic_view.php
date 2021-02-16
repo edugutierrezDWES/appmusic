@@ -32,8 +32,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ){
 			$moneda = "978";
 			$trans = "0";
 			$url = "";
-			$urlOKKO = "http://localhost/musica/controllers/pagook.php";
-			$urlKOOK = "http://localhost/musica/controllers/pagoko.php";
+			$urlOKKO = ../controllers/pagook.php;
+			$urlKOOK = ../controllers/pagoko.php;
 			$id = time();
 	
 			// Se Rellenan los campos

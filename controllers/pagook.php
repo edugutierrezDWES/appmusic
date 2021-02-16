@@ -17,6 +17,7 @@
                 
                 $NewInvoice="INSERT INTO Invoice (InvoiceId,CustomerId,InvoiceDate,BillingAddress,BillingCity,BillingCountry,BillingPostalCode,Total) VALUES ($invoiceId, ".$datosCliente["CustomerId"]." , '$ahora', N'".$datosCliente["Address"]."', N'".$datosCliente["City"]."', N'".$datosCliente["Country"]."', N'".$datosCliente["PostalCode"]."', $TotalPrecio)";
                 $correcto=ejecutarCadena($NewInvoice);
+  //Ver si llega al insert con datos
 
                 for ($i=0; $i < count($_SESSION['cesta']) ; $i++) {
                     $cesta=$_SESSION['cesta'][$i];
@@ -30,6 +31,8 @@
                     }
                 }
                 
+
+//No llega aqui
                 if ($correcto) {
                     $_SESSION['cesta']= [];
                     echo "<br>La compra se ha realizado correctamente";

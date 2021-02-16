@@ -35,6 +35,6 @@
                     echo "<br>La compra se ha realizado correctamente";
                     echo "<br><a href='../downmusic.php'>Recargar Pagina</a>";
                 } else {
-                    echo "<br>Hubo un error en el preceso";
+                    echo "<br>Hubo un error en el proceso";
                     echo "<br><a href='../downmusic.php'>Recargar Pagina</a>";
                 }
